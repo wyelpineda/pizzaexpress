@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Sono:wght@300&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Frijole&family=Nosifer&family=Train+One&display=swap');
+body{
+  margin: 0px;
+  padding: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container{
+  margin: auto;
+}
+.header{
+  position: sticky;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.493);
+}
+.header .btn-menu{
+  display: none;
+  cursor: pointer;
+}
+.btn-menu{
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.493);
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+}
+.title{
+  font-size: 35px;
+  font-family: 'Train One', cursive;
+  color: white;
+}
+.navbar{
+  flex: 1;
+  text-align: right;
+  margin-right: 100px;
+}
+.navbar nav ul li{
+  display: inline-block;
+  padding-right: 50px;
+}
+.navbar nav ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  transition: .3s;
+}  
+.navbar nav ul li i{
+  font-size: 25px;
+  transition: .3s;
+  color: #fff;
+  cursor: pointer;
+}  
+.navbar nav ul li i:hover{
+  color: #920909;
+}  
+.navbar nav ul li a:hover{
+  color: #920909;
+}
+
+.aboutrow{
+    width:100%;
+    height:84vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.aboutrow h1{
+    margin: auto;
+    padding-top: 125px;
+    width: 50%;
+    font-family: 'Sono', sans-serif;
+    color: #fff;
+}
+.aboutrow p{
+    width: 50%;
+    margin: auto;
+    font-size: 25px;
+    font-family: 'Staatliches', cursive;
+    text-indent: 5%;
+    color: #fff;
+    padding: 25px 0;
+}
+.aboutcolml{
+    margin: auto;
+}
+.aboutcolmr{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+.aboutcolmr i{
+    font-size: 50px;
+    padding: 0 50px;
+    padding-top: 60px;
+    margin: auto;
+    color: #fff;
+}
+.text{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+.text h2{
+    padding: 0 70px;
+    color: #fff;
+}
+
+
+@media(max-width:1000px){
+    .header{
+      width: 100%;
+    }
+    .logo img{
+      width: 100px;
+      height: 100px;
+      margin-left: 80px;
+    }
+    .title{
+      font-size: 30px;
+      font-family: 'Train One', cursive;
+    }
+    .header .btn-menu{
+      display: block;
+      position: relative;
+      left: 35%;
+  
+    }
+    .navbar{
+      margin: 0;
+      position: absolute;
+      top: 85px;
+      right: 0;
+      width: 100vw;
+    background-color: rgba(0, 0, 0, 0.493);
+      max-height: 200px;
+      overflow: hidden;
+      transition: all .5s;
+      z-index: 1;
+    }
+    .navbar nav ul{
+      display: flex;
+      flex-direction: column ;
+      align-items: right;
+      padding-right: 200px;
+    }
+    .navbar nav ul li{
+      margin: 15px 0;
+  
+    }
+    .aboutcolml{
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      top:20%;
+      }
+   }
+   @media(max-width:850px){
+    
+  .header{
+    width: 100%;
+  }
+    .header .btn-menu{
+      display: block;
+      position: relative;
+      left: 25%;
+  
+    }
+    .navbar nav ul{
+      display: flex;
+      flex-direction: column ;
+      align-items: right;
+      padding-right: 150px;
+    }
+    .aboutcolml{
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      top:15%;
+      }
+    .aboutcolml h1{
+      color: #fff;
+      font-size: 40px;
+      }    
+    .aboutcolml p{
+      color: #fff;
+      font-size: 20px;
+      }
+      
+   }
+   @media(max-width:700px){
+    
+  .header{
+    width: 100%;
+  }
+  .title{
+    font-family: 'Train One', cursive;
+  }
+  .logo img{
+    width: 80px;
+    height: 80px;
+    margin-left: 70px;
+  }
+    .header .btn-menu{
+      display: block;
+      position: relative;
+      left: 20%;
+  
+    }
+    .navbar nav ul{
+      display: flex;
+      flex-direction: column ;
+      align-items: right;
+      padding-right: 100px;
+    }
+    .aboutcolml h1{
+      color: #fff;
+      font-size: 30px;
+      }    
+    .aboutcolml p{
+      color: #fff;
+      font-size: 15px;
+      }
+      
+    .aboutrow{
+      width:100%;
+      height: 87.4vh;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.493);
+    }
+    .aboutcolml{
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      top:13%;
+      }
+    
+    .navbar{
+      margin: 0;
+      position: absolute;
+      top: 85px;
+      right: 0;
+      width: 100vw;
+      background-color: #fd03038c;
+      max-height: 200px;
+      overflow: hidden;
+      transition: all .5s;
+      z-index: 1;
+    }
+   }
+
+   @media(max-width:500px){
+  
+    .header{
+      width: 100%;
+    }
+    .title{
+      font-size: 18px;
+      font-family: 'Train One', cursive;
+    }
+    .logo img{
+      width: 50px;
+      height: 50px;
+      margin-left: 40px;
+    }
+    .header .btn-menu{
+      display: block;
+      position: relative;
+      left: 20%;
+    }
+    .navbar nav ul{
+      display: flex;
+      flex-direction: column ;
+      align-items: right;
+      padding-right: 100px;
+    }
+    .aboutcolml h1{
+      color: #fff;
+      font-size: 20px;
+      }    
+    .aboutcolml p{
+      color: #fff;
+      font-size: 12px;
+      }
+      
+  .aboutrow{
+    width:100%;
+    height: 87.4vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.493);
+  }
+  .aboutcolml{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top:13%;
+    }
+
+   }
+   
+   @media(max-width:400px){
+    
+    .header{
+      width: 100%;
+    }
+    .logo img{
+      width: 50px;
+      height: 50px;
+      margin-left: 40px;
+    }
+    .title{
+      font-size: 18px;
+      font-family: 'Train One', cursive;
+    }
+  
+    .header .btn-menu{
+      display: block;
+      position: relative;
+      left: 10%;
+    }
+    .navbar nav ul{
+      display: flex;
+      flex-direction: column ;
+      align-items: right;
+      padding-right: 100px;
+    }
+    
+  .aboutrow{
+    width:100%;
+    height: 87.4vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.493);
+  }
+  .aboutcolml{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top:10%;
+    }
+   }

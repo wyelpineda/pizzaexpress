@@ -1,0 +1,435 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Frijole&family=Nosifer&family=Train+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Luckiest+Guy&family=Sono:wght@200&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Sono:wght@500&family=Staatliches&display=swap');
+body{ 
+  margin: 0px;
+  padding: 0px;
+  background-color: #696363;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container{
+  margin: auto;
+}
+.header{
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.header .btn-menu{
+  display: none;
+  cursor: pointer;
+}
+.logo img{
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+}
+.title{
+  font-size: 35px;
+  font-family: 'Train One', cursive;
+  color: white;
+}
+.navbar{
+  flex: 1;
+  text-align: right;
+  margin-right: 100px;
+}
+.navbar nav ul li{
+  display: inline-block;
+  padding-right: 50px;
+}
+.navbar nav ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  transition: .3s;
+}  
+.navbar nav ul li i{
+  font-size: 25px;
+  transition: .3s;
+  color: #fff;
+  cursor: pointer;
+}  
+.navbar nav ul li i:hover{
+  color: #920909;
+}  
+.navbar nav ul li a:hover{
+  color: #920909;
+}
+
+/* ============================= Cart Basket ============================*/
+.cart{
+  display: inline-block;
+  padding-right: 50px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: .3s;
+}
+.cart i{
+  transition: .3s;
+  color: #000000;
+}
+.cart i:hover{
+  color: #920909;
+}  
+.cart{
+  position: fixed;
+  top: 0;
+  right: auto;
+  right: -100%;
+  width: 50vh;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -2px solid 4 px hsl(0, 4%, 15% /10%);
+  border: 1px solid  rgba(0, 0, 0, 0.527);
+  transition: 1.5s;
+}
+.cart.active{
+  right: 0;
+  transition: .5s;
+}
+.cart-title{
+  font-family: 'Sono', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 7%;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.cart-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+.details{
+  display: grid;
+  row-gap: .5rem;
+  font-family: 'Staatliches', cursive;
+}
+.cart-prodname{
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align:left;
+}
+.cart-price{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}
+.cart-quantity{
+  border: 1px solid rgb(0, 0, 0);
+  outline-color: black;
+  width: 2rem;
+  text-align: center;
+  font-size: 12px;
+}
+.cart-remove{
+  font-size: 20px;
+  color: #920909;
+  cursor: pointer;
+}
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+  border-top: 2px solid rgba(0, 0, 0, 0.459);
+  font-size: 20px;
+}
+.total-title{
+  font-weight: 600;
+}
+.total-price{
+  margin-left: 10px;
+}
+.btn-buy{
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  margin-bottom: 50px;
+  padding: 12px 20px;
+  border: none;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Fjalla One', sans-serif;
+}
+.btn-buy:hover{
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
+  transition: .5s;
+  color: black;
+  font-weight: bold;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+#cart-close{
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+
+/* ============================= Products ============================*/
+.categories{
+  font-family: 'Sono', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 20px;
+  border-bottom: 10px double rgba(255, 217, 0, 0.39);
+  width: 70%;
+  color: #ffffff;
+}
+.categories h1 span{
+  font-size: 14px;
+}
+
+ .product h3{
+  text-align: center;
+  font-size: 21px;
+  margin-top: 0;
+  padding-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+ .menu{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+ .product{
+  width: 20%;
+  margin: 50px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(94, 94, 94, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.22);
+/*  transition: .4s; */
+  background: #ffffff;
+}
+ .product img{
+  width: 95%;
+  height: 90%;
+  text-align: center;
+  margin: 5px auto;
+  border-radius: 10px;
+  display: block;
+}/*
+ .product:hover{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+  0 3px 6px rgba(165, 165, 165, 0.466);
+  transform: translate(0px, -8px);
+}*/
+ .product p{
+  font-family: 'Sono', sans-serif;
+  font-size: 12px;
+  height:55px;
+  text-align: center;
+  padding-top: 0px 3px;
+  padding-bottom: 0px 3px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ .product a{
+  text-decoration: none;
+  color: black;
+}
+ .product-price{
+  font-size: 23px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive;
+}
+ .product button{
+  font-size: 15px;
+  color: #fff;
+  width:30%;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 30px;
+ }
+ .add1{
+  background: #000000;
+  cursor: pointer;
+ }
+ .add1 i{
+  font-size: 20px;
+ }
+ .add1:hover{
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
+  transition: .5s;
+  color: #000000;
+ }
+
+ @keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+ @media(max-width:1000px){
+  .product{
+    width: 50%;
+    margin: 15 auto;
+  }
+  .nav{
+    padding: 15px;
+  }
+  .container{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .shop{
+    margin-top: 2rem;
+  }  
+  .header{
+    width: 100%;
+  }
+  .logo img{
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
+  }
+  .title{
+    font-size: 30px;
+    font-family: 'Train One', cursive;
+  }
+  .header .btn-menu{
+    display: block;
+    position: relative;
+    left: 35%;
+
+  }
+  .navbar{
+    margin: 0;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    width: 100vw;
+    max-height: 500px;
+    background-color: rgba(0, 0, 0, 0.493);
+    overflow: hidden;
+    transition: all .5s;
+    z-index: 0;
+  }
+  .navbar nav ul{
+    display: flex;
+    flex-direction: column ;
+    align-items: right;
+    padding-right: 200px;
+  }
+  .navbar nav ul li{
+    margin: 15px 0;
+
+  }
+ 
+ }
+@media(max-width:850px){
+  
+  .header .btn-menu{
+    display: block;
+    position: relative;
+    left: 35%;
+
+  }
+  .navbar nav ul{
+    display: flex;
+    flex-direction: column ;
+    align-items: right;
+    padding-right: 150px;
+  }
+} 
+ @media(max-width:700px){
+  
+  .header .btn-menu{
+    display: block;
+    position: relative;
+    left: 15%;
+
+  }
+  .navbar nav ul{
+    display: flex;
+    flex-direction: column ;
+    align-items: right;
+    padding-right: 100px;
+  }
+ }
+
+ @media(max-width:500px){
+  
+  .product{
+    width: 100%;
+  }
+  .header .btn-menu{
+    display: block;
+    position: relative;
+    left: 10%;
+  }
+  .navbar nav ul{
+    display: flex;
+    flex-direction: column ;
+    align-items: right;
+    padding-right: 100px;
+  }
+ }
+ 
+ @media(max-width:400px){
+  .logo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+  }
+  .title{
+    font-size: 18px;
+    font-family: 'Train One', cursive;
+  }
+
+  .header .btn-menu{
+    display: block;
+    position: relative;
+    left: 10%;
+  }
+  .navbar nav ul{
+    display: flex;
+    flex-direction: column ;
+    align-items: right;
+    padding-right: 100px;
+  }
+ }

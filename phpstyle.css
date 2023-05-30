@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Luckiest+Guy&family=Sono:wght@200&family=Train+One&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+  }
+
+
+
+.btn, .log-out-btn, .back-btn, .upload-btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: 10px;
+    border: none;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+}
+.log-out-btn, .back-btn, .upload-btn{
+    text-decoration: none;
+}
+.btn:hover, .log-out-btn:hover, .back-btn:hover , .upload-btn:hover{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
+    transition: .5s;
+    color: black;
+    font-weight: bold;
+}
+
+.container{
+    height: 93vh;
+    padding:20px;
+    padding-left: 11%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+.container form{
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+.container form h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    color: rgb(0, 0, 0);
+    font-family: 'Acme', sans-serif;
+}
+.container form .box{
+    width: 80%;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 12px 14px;
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.466);
+    color: rgb(0, 0, 0);
+}
+.container form p{
+    margin-top: 20px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    font-family: 'Fjalla One', sans-serif;
+}
+.container form p a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Fjalla One', sans-serif;
+}
+.container form p a:hover{
+    text-decoration: underline;
+    color: rgb(136, 0, 0);
+}
+.container2{
+    height: 93vh;
+    padding:20px;
+    padding-left: 11%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+.container2 form{
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+.container2 form h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Acme', sans-serif;
+}
+.container2 form .box{
+    width: 80%;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 12px 14px;
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.466);
+    color: rgb(0, 0, 0);
+}
+.container2 form p{
+    margin-top: 20px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    font-family: 'Fjalla One', sans-serif;
+}
+.container2 form p a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Fjalla One', sans-serif;
+}
+.container2 form p a:hover{
+    text-decoration: underline;
+    color: rgb(136, 0, 0);
+}
+.logoacc{
+    display: flex;
+    position: relative;
+    left: 11%;
+    top: 7%;
+    width: 10%;
+}
+.logoacc img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+  
+
+/* Account */
+.acccontainer{
+    position: relative;
+    height: 90vh;
+    margin-top: 50px;
+}
+
+.acccontainer .profile{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.658);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.226);
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 500px;
+
+}
+
+.acccontainer .profile{
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: black;
+}
+
+.acccontainer .profile p span{
+    color: rgb(136, 0, 0);
+}
+  
+  .profile img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #DCDCDC;
+  }
+  
+.upbody{
+	display: flex;
+	position: absolute;
+	top: 50%;
+	width: 100vw;
+}
+  .uploadtable{
+	background: #FFFBAC;
+	width: 500px;
+	margin: 0 auto;
+	height: 100px;
+  }
+  .uploadform{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100px;
+	justify-content: space-evenly;
+  }
